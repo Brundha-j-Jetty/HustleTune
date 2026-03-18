@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HustleTune</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <h1 class="app-title">🎧 HustleTune</h1>
+    <p class="tagline">Tune your hustle to your mood</p>
+
+    <div class="card">
+        <p class="instruction">
+            Speak clearly for 3–4 seconds and select your preferred language.
+        </p>
+
+        <select id="languageSelect" class="language-select">
+            <option value="Mixed">🌍 All Languages</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Malayalam">Malayalam</option>
+        </select>
+
+        <button id="recordBtn">🎙️ Record Voice</button>
+
+        <p id="status" class="status-text"></p>
+
+        <div class="result-box">
+            <h2 id="moodText"></h2>
+            <p id="moodDesc"></p>
+        </div>
+
+        <div id="playlist" class="playlist"></div>
+    </div>
+
+    <p class="footer">
+        Built with Flask & Spotify API
+    </p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
